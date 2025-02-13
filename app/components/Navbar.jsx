@@ -1,14 +1,14 @@
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
-import { is } from './../../.next/static/chunks/[root of the server]__31723f._';
+
 
 const Navbar = ({isDarkMode,setIsDarkMode}) => {
   const [isScroll,setISScroll] = useState(false);
   const sideMenuRef = useRef();
   
   const toggleDarkMode = () => {
-    setIsDarkMode((prev) => !prev); // ✅ Đúng cách
+    setIsDarkMode((prev) => !prev); 
   };
   const openMenu = ()=>{
     sideMenuRef.current.style.transform = 'translateX(-16rem)'
